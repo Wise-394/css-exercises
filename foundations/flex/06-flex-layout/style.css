@@ -3,6 +3,7 @@
 body {
   height: 100vh;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
@@ -23,4 +24,41 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px
+}
+.footer{
+  background-color: #eeeeee;
+}
+
+div ul{
+  display: flex;
+  gap: 8px;
+  margin: 0 8px;
+  padding: 0;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  height: 90vh;
+}
+.buttons{
+  margin: 10px 0;
+}
+.footer{
+  display: flex;
 }
