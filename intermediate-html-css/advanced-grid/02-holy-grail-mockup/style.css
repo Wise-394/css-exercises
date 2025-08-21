@@ -22,6 +22,7 @@
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style-type: none;
 }
 
 .sidebar {
@@ -51,6 +52,8 @@
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
+
 }
 
 .article {
@@ -88,4 +91,62 @@
 .footer p {
   font-size: 13px;
   font-weight: normal;
+}
+
+/* sarappers------------------------- */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap:4px;
+}
+
+.header {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.menu {
+    align-self: center;
+}
+.menu > ul {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: end;
+  align-items: center ;
+  list-style: none;
+}
+
+.header > .logo {
+  justify-self: start;
+}
+
+.sidebar{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/4;
+  grid-template-rows: repeat(4,1fr);
+  gap: 50px;
+
+}
+
+.sidebar > div {
+  display: grid;
+  align-items: center;
+}
+
+.nav > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.article{
+  grid-column: 2/3;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+.article > .card {
+  height: 200px;
+}
+.footer {
+  grid-column: 1/3;
 }
